@@ -1,22 +1,5 @@
-/* const apiKey = "8d639c15e17cf92d49fccc3217208cff";
-const apiUrl ="https://api.openweathermap.org/data/2.5/weather?q=oujda&units=metric";
-
-async function checkWeather() {
-    const response = await fetch(apiUrl + "&appid=${apiKey}");
-    let data = await response.json();
-
-    document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temp").innerHTML = data.main.temp;
-    document.querySelector(".humidity").innerHTML = data.main.humidity;
-    document.querySelector(".wind").innerHTML = data.wind.speed;
-    
-    console.log(data);
-}
-
-checkWeather(); */
-
-const apiKey = "8d639c15e17cf92d49fccc3217208cff";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiKey = CONFIG.apiKey;
+const apiUrl = CONFIG.apiUrl;
 
 const searchInput = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
